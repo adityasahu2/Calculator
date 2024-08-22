@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container" class="center2 grid">
+        <div id="input"></div>
+        <div class="button center1" id="clear">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M12.0004 9.5L17.0004 14.5M17.0004 9.5L12.0004 14.5M4.50823 13.9546L7.43966 17.7546C7.79218 18.2115 7.96843 18.44 8.18975 18.6047C8.38579 18.7505 8.6069 18.8592 8.84212 18.9253C9.10766 19 9.39623 19 9.97336 19H17.8004C18.9205 19 19.4806 19 19.9084 18.782C20.2847 18.5903 20.5907 18.2843 20.7824 17.908C21.0004 17.4802 21.0004 16.9201 21.0004 15.8V8.2C21.0004 7.0799 21.0004 6.51984 20.7824 6.09202C20.5907 5.71569 20.2847 5.40973 19.9084 5.21799C19.4806 5 18.9205 5 17.8004 5H9.97336C9.39623 5 9.10766 5 8.84212 5.07467C8.6069 5.14081 8.38579 5.2495 8.18975 5.39534C7.96843 5.55998 7.79218 5.78846 7.43966 6.24543L4.50823 10.0454C3.96863 10.7449 3.69883 11.0947 3.59505 11.4804C3.50347 11.8207 3.50347 12.1793 3.59505 12.5196C3.69883 12.9053 3.96863 13.2551 4.50823 13.9546Z"
+                    class="stroke2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="button center1" id="clear-all">
+            <svg class="fill2" viewBox="0 0 24 24">
+                <text y="18">AC</text>
+            </svg>
+        </div>
+        <div class="button center1" id="percent">
+            <svg class="fill2" viewBox="-3 0 19 19">
+                <path
+                    d="M2.865 8.14a2.553 2.553 0 1 1 2.552-2.552 2.555 2.555 0 0 1-2.552 2.553zm0-1.582a.97.97 0 1 0-.97-.97.97.97 0 0 0 .97.97zm7.942-1.991L3.914 14.886a1.03 1.03 0 0 1-1.712-1.143l6.893-10.32a1.03 1.03 0 0 1 1.712 1.144zm1.88 8.215a2.553 2.553 0 1 1-2.552-2.552 2.555 2.555 0 0 1 2.553 2.552zm-1.582 0a.97.97 0 1 0-.97.97.97.97 0 0 0 .97-.97z" />
+            </svg>
+        </div>
+        <div class="button center1" id="divide">
+            <svg class="fill2" viewBox="-3 0 19 19">
+                <path
+                    d="M12.711 9.182a1.03 1.03 0 0 1-1.03 1.03H1.319a1.03 1.03 0 1 1 0-2.059h10.364a1.03 1.03 0 0 1 1.029 1.03zM5.03 4.586a1.47 1.47 0 1 1 1.47 1.47 1.47 1.47 0 0 1-1.47-1.47zm2.94 9.193a1.47 1.47 0 1 1-1.47-1.47 1.47 1.47 0 0 1 1.47 1.47z" />
+            </svg>
+        </div>
+        <div class="button center1" id="seven">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M8 4H16L10 20" class="stroke" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="button center1" id="eight">
+            <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="15" r="5" class="stroke" stroke-width="2.5" stroke-linejoin="round" />
+                <circle cx="12" cy="7" r="3" class="stroke" stroke-width="2.5" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="button center1" id="nine">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M11 20L16.2269 11.6721M7 9C7 6.23858 9.23858 4 12 4C14.7614 4 17 6.23858 17 9C17 11.7614 14.7614 14 12 14C9.23858 14 7 11.7614 7 9Z"
+                    class="stroke" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="button center1" id="multiply">
+            <svg class="fill2" viewBox="-3.5 0 19 19">
+                <path
+                    d="M11.383 13.644A1.03 1.03 0 0 1 9.928 15.1L6 11.172 2.072 15.1a1.03 1.03 0 1 1-1.455-1.456l3.928-3.928L.617 5.79a1.03 1.03 0 1 1 1.455-1.456L6 8.261l3.928-3.928a1.03 1.03 0 0 1 1.455 1.456L7.455 9.716z" />
+            </svg>
+        </div>
+        <div class="button center1" id="four">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M10 4L8.47845 11.6078C8.23093 12.8453 9.17752 14 10.4396 14H16M16 14V8M16 14V20" class="stroke"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="button center1" id="five">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M8 19.0004C8.83566 19.6281 9.87439 20 11 20C13.7614 20 16 17.7614 16 15C16 12.2386 13.7614 10 11 10C9.87439 10 8.83566 10.3719 8 10.9996L9 4H16"
+                    class="stroke" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="button center1" id="six">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M13 4L7.77313 12.3279M17 15C17 17.7614 14.7614 20 12 20C9.23858 20 7 17.7614 7 15C7 12.2386 9.23858 10 12 10C14.7614 10 17 12.2386 17 15Z"
+                    class="stroke" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="button center1" id="minus">
+            <svg viewBox="-3 -3 26.00 26.00" fill="none" class="stroke2" stroke-width="0.7">
+                <path class="fill2" fill-rule="evenodd" d="M18 10a1 1 0 01-1 1H3a1 1 0 110-2h14a1 1 0 011 1z" />
+            </svg>
+        </div>
+        <div class="button center1" id="one">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 20V4L9 7" class="stroke" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="button center1" id="two">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M8 8C8 6.97631 8.39052 5.95262 9.17157 5.17157C10.7337 3.60947 13.2663 3.60947 14.8284 5.17157C16.3905 6.73366 16.3905 9.26632 14.8284 10.8284L9.17157 16.4853C8.42143 17.2354 8 18.2528 8 19.3137L8 20L16 20"
+                    class="stroke" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="button center1" id="three">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M8 19.0004C8.83566 19.6281 9.87439 20 11 20C13.7614 20 16 17.7614 16 15C16 12.2386 13.7614 10 11 10L16 4H8"
+                    class="stroke" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="button center1" id="plus">
+            <svg class="fill2" width="800px" height="800px" viewBox="-3 0 19 19">
+                <path
+                    d="M12.711 9.182a1.03 1.03 0 0 1-1.03 1.03H7.53v4.152a1.03 1.03 0 0 1-2.058 0v-4.152H1.318a1.03 1.03 0 1 1 0-2.059h4.153V4.001a1.03 1.03 0 0 1 2.058 0v4.152h4.153a1.03 1.03 0 0 1 1.029 1.03z" />
+            </svg>
+        </div>
+        <div class="button center1" id="plus-minus">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M20 4L4 20" class="stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                <path d="M4 7H7M10 7H7M7 7V4M7 7V10" class="stroke" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" />
+                <path d="M14 17H17H20" class="stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+            </svg>
+        </div>
+        <div class="button center1" id="zero">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M12 20C14.7614 20 17 17.7614 17 15V9C17 6.23858 14.7614 4 12 4C9.23858 4 7 6.23858 7 9V15C7 17.7614 9.23858 20 12 20Z"
+                    class="stroke" stroke-width="2.5" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="button center1" id="point">
+            <svg viewBox="-2.4 -2.4 28.80 28.80" fill="none">
+                <circle cx="12" cy="12" r="2" class="fill" />
+            </svg>
+        </div>
+        <div class="button center1" id="equal">
+            <svg class="fill" viewBox="-3 0 19 19">
+                <path
+                    d="M.289 6.883a1.03 1.03 0 0 1 1.03-1.03h10.363a1.03 1.03 0 0 1 0 2.059H1.318A1.03 1.03 0 0 1 .29 6.882zm12.422 4.604a1.03 1.03 0 0 1-1.03 1.03H1.319a1.03 1.03 0 1 1 0-2.059h10.364a1.03 1.03 0 0 1 1.029 1.03z" />
+            </svg>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
