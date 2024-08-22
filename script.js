@@ -87,18 +87,33 @@ buttons.forEach(button => {
                 operatorarr = []
             }
         }
-        else if (button.id in opr && currentoperand != "") {
-            if (button == percent) {
+        else if (button == percent) {
+            if (inputtext.charAt(inputtext.length - 1) in operators) {
+                operatorarr.pop()
+                currentoperand = operandarr[operandarr.length - 1]
+                inputtext = inputtext.slice(0, (inputtext.length - currentoperand.length-1))
+                input.textContent = inputtext
+                operandarr.pop()
+            }
+            else{
                 inputtext = inputtext.slice(0, (inputtext.length - currentoperand.length))
-                currentoperand = eval(currentoperand + "/100").toString()
-                inputtext += currentoperand
             }
-            else {
-                operatorarr.push(opr[button.id])
-                inputtext += opr[button.id]
-                operandarr.push(currentoperand)
-                currentoperand = ""
-            }
+            currentoperand = eval(currentoperand + "/100").toString()
+            inputtext += currentoperand
+            input.textContent = inputtext
+        }
+        else if (button.id in opr && currentoperand != "") {
+            operatorarr.push(opr[button.id])
+            inputtext += opr[button.id]
+            operandarr.push(currentoperand)
+            currentoperand = ""
+            input.textContent = inputtext
+        }
+        else if (button.id in opr && currentoperand == "") {
+            operatorarr.pop()
+            operatorarr.push(opr[button.id])
+            inputtext = inputtext.slice(0, inputtext.length - 1)
+            inputtext += opr[button.id]
             input.textContent = inputtext
         }
         else {
@@ -135,5 +150,6 @@ buttons.forEach(button => {
                 operatorarr = []
             }
         }
+        console.log(operatorarr)
     })
 })
