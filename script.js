@@ -39,7 +39,7 @@ buttons.forEach(button => {
         button.classList.add("animate")
         setTimeout(() => {
             button.classList.remove("animate")
-        }, 700)
+        }, 500)
 
         if (button == plusminus) {
             if (currentoperand.charAt(0) == "-") {
