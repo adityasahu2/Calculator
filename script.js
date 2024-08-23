@@ -150,6 +150,5 @@ buttons.forEach(button => {
                 operatorarr = []
             }
         }
-        console.log(operatorarr)
     })
 })
