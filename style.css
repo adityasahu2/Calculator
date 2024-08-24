@@ -85,7 +85,7 @@ body {
         inset 0px 0px 20px #242328;
 }
 
-#input {
+#input, #output {
     position: relative;
     grid-column: 1/5;
     font-size: 20px;
@@ -93,9 +93,19 @@ body {
     width: 315px;
     overflow-x: auto;
     top: 20px;
+}
+
+#input{
     font-weight: 600;
     font-size: 1.5em;
-    grid-row: 1/3;
+    grid-row: 1/2;
+}
+
+#output {
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 1.2em;
+    grid-row: 2/3;
 }
 
 .fill2 {
